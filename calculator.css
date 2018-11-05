@@ -15,55 +15,10 @@ body {
 
 /* Responsive Images */
 
-embed,
-iframe,
-img,
-object,
-video {
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-p,
-pre,
-blockquote,
-figure,
-hr {
+h1 {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-}
-
-/* Removes all decimals and discs from lists */
-
-ol,
-ul {
-  list-style: none;
 }
 
 input,
@@ -104,7 +59,8 @@ html {
 
 body {
   align-items: center;
-  background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+  background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA); 
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -130,7 +86,7 @@ body {
 
 .calculator_display {
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.0rem;
   height: 80px;
   border: none;
   background-color: #252525;
@@ -150,17 +106,19 @@ body {
 }
 .operator_keys{
   display: grid;
-  grid-gap: 1px;
   grid-template-columns: repeat(5, 0fr);
+  border: none;
 }
 .operator_keys > *{
   background-color: #fff;
   padding: 0.5em 1.25em;
   position: relative;
   text-align: center;
+  border: none;
 }
 .other_keys > * {
-  background-color: #fff;
+  background-color: #252525;
+  color: #fff;
   padding: 0.5em 1.25em;
   position: relative;
   text-align: center;
@@ -169,7 +127,6 @@ body {
 .operator_keys > .is-depressed::before {
   background-color: rgba(0, 0, 0, 0.2);
   bottom: 0;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
   content: "";
   left: 0;
   opacity: 0.3;
@@ -177,6 +134,7 @@ body {
   right: 0;
   top: 0;
   z-index: 1;
+  border: none;
 }
 .other_keys > *:active::before,
 .other_keys > .is-depressed::before {
@@ -193,7 +151,7 @@ body {
 }
 
 .operator {
-  background-color: #eee;
+  background-color: linear-gradient(to bottom, #fe886a, #ff7033);;
 
 }
 .equal {
