@@ -154,8 +154,11 @@ body {
   background-color: linear-gradient(to bottom, #fe886a, #ff7033);;
 
 }
+.all-clear{
+  background-color: #D94545;
+}
 .equal {
-  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  background-color: #0000C4;
   grid-column: -2;
   grid-row: 1 / span 4;
 }
